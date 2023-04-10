@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="container__first-block">
+				<div class="banner">
+					<img src="@img/bg.jpg" alt="" class="banner__bg">
+					<img src="@img/strij.png" alt="" class="banner__strizh">
+					<div class="banner__wrap">
+						<div class="banner__title">
+							<div class="title-banner">
+								<img src="@img/logo.svg" alt="">
+							</div>
+						</div>
+						<p class="banner__text">
+							Жилой комплекс класса Комфорт+ на Московском тракте 109б
+						</p>
+					</div>
+				</div>
+				<div class="line-bottom">
+					<span class="line-big"></span>
+					<div class="line-bottom__body ">
+						<h1 class="line-bottom__text">Стиль</h1>
+						<span class="line"></span>
+						<h1 class="line-bottom__text">Комфорт</h1>
+						<span class="line"></span>
+						<h1 class="line-bottom__text">Статус</h1>
+					</div>
+					<span class="line-big"></span>
+				</div>
+			</div>
+		</main>
+
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
